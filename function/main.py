@@ -1,2 +1,2 @@
-def hello_world(request):
+def handler(request):
     return 'Hi there\n'
