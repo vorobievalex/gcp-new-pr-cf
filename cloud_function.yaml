@@ -2,6 +2,7 @@ imports:
 - path: cloud_function.py
 # The function code will be defined for the files in function/
 - path: function/main.py
+- path: function/requirements.txt
 
 resources:
 - name: function
