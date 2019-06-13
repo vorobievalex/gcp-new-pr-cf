@@ -7,7 +7,6 @@ resources:
 - name: function
   type: cloud_function.py
   properties:
-    # All the files that start with this prefix will be packed in the Cloud Function
     codeLocation: function/
     codeBucket: isolated-bucket-do-not-delete-aig768r
     codeBucketObject: function.zip
