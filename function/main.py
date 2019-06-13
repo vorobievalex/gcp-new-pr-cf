@@ -7,7 +7,11 @@ def handler(request):
     service = discovery.build('cloudresourcemanager', 'v1', credentials=credentials)
     project_body = {
         'name': 'Test Project',
-        'projectId': 'hurricane-59'
+        'projectId': 'hurricane-59',
+        "parent": {
+            "type": "organization",
+            "id": "0"
+        }
     }
     request = service.projects().create(body=project_body)
     request.execute()
