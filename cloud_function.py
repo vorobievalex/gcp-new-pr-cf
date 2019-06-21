@@ -73,17 +73,7 @@ def GenerateConfig(ctx):
             'availableMemoryMb':
                 ctx.properties['availableMemoryMb'],
             'runtime':
-                ctx.properties['runtime'],
-            'accessControl': {
-                'gcpIamPolicy': {
-                    'bindings': {
-                        'role': 'roles/pubsub.viewer'
-                    },
-                    'members': {
-                        'user': '2elevee@gmail.com'
-                    }
-                }
-            }
+                ctx.properties['runtime']
         },
         'metadata': {
             'dependsOn': ['upload-function-code']
